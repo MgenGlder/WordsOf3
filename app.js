@@ -52,12 +52,11 @@ The ideal candidate has the following qualifications:
     A balance of technical, business, and social/emotional intelligence
 
     Passion about learning coupled with an ability to learn new skills quickly`.replace(/[^a-zA-Z0-9\s]/g, '').split(" ").forEach(function(element){
-    if(element.length % 3 == 0 && element.length != 0){
-        count++;
-        multiplesOfThree.push(element.length);
-        multiplesOfThree.sort();
-    }
-});
+if(element.length % 3 == 0 && element.length != 0){
+    count++;
+    multiplesOfThree.push(element.length);
+    multiplesOfThree.sort();
+}});
 
 modeArray = [];
 for (let i = 0; i < multiplesOfThree.length; i ++) {
